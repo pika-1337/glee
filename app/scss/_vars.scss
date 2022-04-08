@@ -2,6 +2,7 @@ $accent: #243f4d;
 $default:#585858;
 $title:#436372;
 $menu:#a3bbc8;
+$bg:#fcd7b6;
 
 
 %dnsans-400{
@@ -27,4 +28,9 @@ $menu:#a3bbc8;
 %rubic-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%btn{
+  padding: 14px 35px;
+  color: #fff;
 }

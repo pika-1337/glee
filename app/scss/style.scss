@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -100,8 +101,97 @@
 
 
 
+.top__slider{
+  background-image: url(../images/top-slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  background-color: $bg;
+  padding-top: 220px;
+  padding-bottom: 45px;
+  &-title{
+    max-width: 500px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubic-500;
+    margin-bottom: 30px;
+  }
+  &-item{
+    display: flex !important;
+    justify-content: space-between;
+    padding-bottom: 200px;
+  }
+  &-text{
+    @extend %rubic-400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 370px;
+    margin-bottom: 25px;
+  }
+  &-link{
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px 0 25px;
+    background-color: $menu;
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    max-width: 200px;
+  }
+  &-link-text{
+    font-size: 15px;
+    line-height: 12px;
+    @extend%rubic-500;
+    max-width: 75px;
+  }
+  &-link span{
+  }
+}
 
 
+.slick-dots{
+      display: flex;
+      justify-content: center;
+  li{
+    padding: 0 5px;
+    line-height: 0px;
+    button{
+      padding: 0;
+      font-size: 15px;
+      background-color: #fde3cc;
+      width: 26px;
+      height: 26px;
+      border: none;
+      border-radius: 50%;
+      position: relative;
+      color: #000;
+      &::before{
+      
+      }
+      
+    }
+    
+    &.slick-active{
+      button{
+        border: none;
+      position: relative;
+      padding: 0;
+      font-size: 15px;
+      background-color: #fff;
+      width: 26px;
+      height: 26px;
+      border: none;
+      border-radius: 50%;
+      color: #000;
+      }
+      &::before{
+        position: absolute;
+      }
+    }
+  }
+}
 
 
 
@@ -178,7 +268,7 @@
     @extend%dnsans-400;
     font-size: 14px;
     line-height: 21px;
-    padding: 12px 16px;
+    padding: 12px 15px;
     cursor: pointer;
   }
 }
