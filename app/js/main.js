@@ -1,5 +1,6 @@
 $(function(){
   
+
   $('.top__slider-inner').slick({
     dots:true,
     arrows:false,
@@ -11,3 +12,7 @@ $(function(){
   });
 
 });
+$(function(){
+  var mixer = mixitup('.products__items');
+
+})
