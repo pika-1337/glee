@@ -46,5 +46,10 @@ $bg:#fef7f0;
 %btn{
   padding: 14px 35px;
   color: #fff;
+  line-height: 30px;
+  font-size: 15px;
+  background-color: #a3bbc8;
+  @extend %rubic-400;
+  cursor: pointer;
 }
 
