@@ -83,11 +83,11 @@ const browserSync = require('browser-sync').create();
   }
 
 
+  exports.browsersync = browsersync;
   exports.styles = styles;
   exports.scripts = scripts;
-  exports.browsersync = browsersync;
-  exports.watching = watching;
   exports.images = images;
+  exports.watching = watching;
   exports.cleanDist = cleanDist;
   exports.build = series(cleanDist,images, build);
 
