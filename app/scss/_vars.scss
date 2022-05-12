@@ -2,6 +2,8 @@ $accent: #243f4d;
 $default:#585858;
 $title:#436372;
 $menu:#a3bbc8;
+$header-bg:#fcd7b6;
+$bg:#fef7f0;
 
 
 %dnsans-400{
@@ -20,6 +22,10 @@ $menu:#a3bbc8;
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
 }
+%rubic-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
 %rubic-400{
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
@@ -28,3 +34,22 @@ $menu:#a3bbc8;
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%btn{
+  padding: 14px 35px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 15px;
+  background-color: #a3bbc8;
+  @extend %rubic-400;
+  cursor: pointer;
+}
+

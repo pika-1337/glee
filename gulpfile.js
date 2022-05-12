@@ -33,6 +33,11 @@ const browserSync = require('browser-sync').create();
   function scripts() {
     return src([
       'node_modules/jquery/dist/jquery.js',
+      'node_modules/slick-carousel/slick/slick.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+      'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+      'node_modules/rateyo/src/jquery.rateyo.js',
+      'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -73,16 +78,16 @@ const browserSync = require('browser-sync').create();
 
   function watching() {
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/scss/**/*.scss', '!app/js/main.min.js'], styles);
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], styles);
+    watch(['app/**/*.html']).on('change', browserSync.reload);
   }
 
 
+  exports.browsersync = browsersync;
   exports.styles = styles;
   exports.scripts = scripts;
-  exports.browsersync = browsersync;
-  exports.watching = watching;
   exports.images = images;
+  exports.watching = watching;
   exports.cleanDist = cleanDist;
   exports.build = series(cleanDist,images, build);
 
