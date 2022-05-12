@@ -38,7 +38,7 @@ const browserSync = require('browser-sync').create();
       'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
       'node_modules/rateyo/src/jquery.rateyo.js',
       'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-      'app/js/main.js',
+      'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -78,8 +78,8 @@ const browserSync = require('browser-sync').create();
 
   function watching() {
     watch(['app/scss/**/*.scss'], styles);
-    watch(['app/scss/**/*.scss', '!app/js/main.min.js'], styles);
-    watch(['app/*.html']).on('change', browserSync.reload);
+    watch(['app/js/**/*.js', '!app/js/main.min.js'], styles);
+    watch(['app/**/*.html']).on('change', browserSync.reload);
   }
 
 
