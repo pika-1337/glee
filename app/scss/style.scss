@@ -1310,26 +1310,36 @@ display: none;
   }
 }
 
+.comments-title{
+  margin-bottom: 50px;
+  @extend %rubic-500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #436372;
+}
 
 .comments{
   margin-bottom: 40px;
   display: flex;
   &__img{
-    height: 71px;
-    min-width: 71px;
+    height: 100px;
+    min-width: 100px;
     margin-right: 30px;
-    border-radius: 50%;
     overflow: hidden;
     object-fit: cover;
   }
+  &-reply{
+    margin-left: 130px;
+  }
   &__content-top{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
   }
   &__content-name{
-    color: #29282d;
+    color: #436372;
     margin-right: 13px;
-    @extend %rubic-400;
+    @extend %rubic-700;
   }
   &__content-data{
     padding-left: 13px;
@@ -1337,7 +1347,7 @@ display: none;
     &::before{
       position: absolute;
       content:'';
-      top: 8px;
+      top: 4px;
       left: 0;
       width: 1px;
       height: 15px;
@@ -1380,12 +1390,13 @@ display: none;
 .comment-form{
   &__title{
     color: #29282d;
-    @extend %rubic-400;
-    font-size: 22px;
-    line-height: 28px;
+    @extend %rubic-700;
+    font-size: 24px;
+    line-height: 30px;
     margin-bottom: 35px;
     position: relative;
     padding-bottom: 20px;
+    color: #436372;
     &:before{
       content: '';
       width: 50px;
@@ -1424,13 +1435,28 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
+  &__text-input-svg{
+    position: relative;
+    & svg{
+      position: absolute;
+      right: 19px;
+      top: 20px;
+    }
+  }
   &__text-input{
-    width: 570px;
+    width: 400px;
     display: inline-block;
     height: 50px;
     padding: 0 20px;
     border: 1px solid #f0f0f0;
-
+  }
+&__text-textarea-svg{
+    position: relative;
+    & svg{
+      position: absolute;
+      right: 19px;
+      top: 20px;
+    }
   }
   &__textarea{
     border: 1px solid #f0f0f0;
@@ -1441,6 +1467,7 @@ display: none;
     resize: none;
     margin-bottom: 40px;
   }
+
   &__btn{
     border: none;
     @extend %btn;
@@ -1462,7 +1489,7 @@ display: none;
 
 .blog{
   &__inner{
-  padding: 120px 0 70px;
+  padding: 120px 0 120px;
   display: flex;
   // height: 1000px;
   }
@@ -1586,6 +1613,210 @@ display: none;
       @extend %rubic-400;
       line-height: 20px;
     }
+  }
+}
+
+.blog-one{
+  &__title{
+    font-size: 36px;
+    line-height: 26px;
+    @extend %rubic-400;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  &__title-about{
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    @extend %rubic-500;
+    color: #243f4d;
+    margin-bottom: 15px;
+  }
+  &__text{
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    @extend %rubic-400;
+    color: #243f4d;
+    margin-bottom: 32px;
+  }
+  &__quote{
+    height: 130px;
+    background-color: #edf1f4;
+    position: relative;
+    margin-bottom: 50px;
+    &:before{
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 130px;
+      background-color: #a3bbc8;
+    }
+    &-text{
+    padding-left: 40px;
+    padding-top: 25px;
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    @extend %rubic-400;
+    color: #243f4d;
+    margin-bottom: 10px;
+    }
+    &-author{
+    padding-left: 40px;
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    @extend %rubic-400;
+    color: #243f4d;
+    & svg{
+      margin-right: 20px;
+    }
+    }
+  }
+  &__riusmod{
+    display: flex;
+    margin-bottom: 45px;
+    &-img{
+      width: 320px;
+      display: block;
+      height: 210px;
+      margin-right: 30px;
+      object-fit: cover;
+
+    }
+    &-content{
+      display: block;
+    }
+    &-title{
+      @extend %rubic-500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #243f4d;
+      margin-bottom: 30px;
+    }
+    &-text{
+      @extend %rubic-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+  &__info{
+    display: block;
+    margin-bottom: 50px;
+    &-title{
+      @extend %rubic-500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #243f4d;
+      margin-bottom: 25px;
+    }
+    &-text{
+      @extend %rubic-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #565872;
+    }
+  }
+  &__mark{
+    display: flex;
+    padding: 25px 0;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    &-img{
+      display: block;
+      width: 76px;
+      height: 76px;
+      margin-right: 30px;
+    }
+    &-box-info{
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+      
+    }
+    &-box-info{
+      display: flex;
+    }
+    &-name{
+      @extend %rubic-500;
+      font-size: 18px;
+      line-height: 25px;
+      color: #333333;
+      margin-bottom: 15px;
+
+    }
+    &-pos{
+      @extend %rubic-400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #666666;
+    }
+    &-box-right{
+      justify-content: space-between;
+    }
+    &-tags{
+      display: flex;
+      margin-bottom: 17px;
+    }
+      &-tags-title{
+        color: #333333;
+        @extend %rubic-400;
+      font-size: 16px;
+      line-height: 26px;
+      margin-right: 20px;
+      }
+      &-tags-link-one{
+        @extend %rubic-300;
+        margin-right: 10px;
+      }
+      &-tags-link{
+        @extend %rubic-300;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &-share-title{
+        color: #333333;
+        @extend %rubic-400;
+      font-size: 16px;
+      line-height: 26px;
+      margin-right: 15px;
+      }
+      &-link-one{
+        margin-right: 5px;
+      }
+
+      &-share{
+      display: flex;
+      margin-bottom: 17px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &-title{
+      @extend %rubic-400;
+      font-size: 18px; 
+      line-height: 26px;
+      margin-right: 15px;
+      }
+      &-link{
+        margin-left: 15px;
+      }
+    }
+    &-info{
+      & svg{
+            cursor: pointer;
+        margin-left: 10px;
+        &:hover{
+          path{
+            fill:red;
+          }
+        }
+      }
+    }
+
   }
 }
 
