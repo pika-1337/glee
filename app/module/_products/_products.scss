@@ -1,0 +1,211 @@
+.products {
+  background-color: #fbfbfb;
+  padding: 75px 0;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    @extend %dnsans-700;
+    margin-bottom: 30px;
+    color: #191919;
+  }
+  &__filter-btn,
+  .design__header-filter-btn {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  &__btn,
+  .design__header-btn {
+    border: none;
+    background-color: #fbfbfb;
+    margin: 0;
+    cursor: pointer;
+  }
+  &__btn + &__btn {
+    margin-left: 30px;
+  }
+  &__link {
+    align-items: center;
+    font-size: 16px;
+    @extend %dnsans-700;
+    color: #ccc;
+  }
+}
+.products__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  grid-gap: 30px 40px;
+  align-self: center;
+
+  &-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+    min-width: 270px;
+    padding: 20px 20px 20px 40px;
+    background-color: white;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    text-align: center;
+    &.products__items--list{
+        display: flex;
+      flex-direction: row;
+    min-width: 100%;
+        text-align: left;
+
+      .products__items-img-box{
+        min-height: 500px;
+        min-width: 370px;
+        border: 1px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .products__items-img{
+        margin: 0 auto;
+        min-width: 323px;
+        min-height: 338px;
+      }
+      .products__items-link-box{
+        display: none;
+      }
+      .products__items-info-wrapper{
+        margin-left: 55px;
+      }
+      .products__items-info-title{
+        font-size: 40px;
+        line-height: 26px;
+        color: #333333;
+        @extend %rubic-400;
+        margin-top: 90px;
+        margin-bottom: 25px;
+        text-align: left;
+      }
+      .jq-ry-container{
+        display: block;
+        margin-bottom: 35px;
+        }
+      .products__items-info-price{
+        font-size: 30px;
+        line-height: 45px;
+        @extend %rubic-400;
+        color: #333333;
+        margin-bottom: 35px;
+      }
+      .products__items-info-text{
+        @extend %rubic-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #243f4d;
+        display: block;
+        text-align: left;
+        margin-bottom: 35px;
+      }
+      .products__items-info-link-box{
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        padding-bottom: 100px;
+      }
+      .products__items-info-link{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        &:hover{
+        .products__items-info-cart{
+          transform: translateY(0);
+          }
+        background-color: #a3bbc8;
+        &:last-child{
+          margin-right: 0;
+          }
+          path{
+          fill:#fff;
+          }
+        }
+      }
+      .products__items-info-cart{
+        position: absolute;
+        width: 208px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a3bbc8;
+        color: #ffffff;
+        z-index: 1px;
+        transition: all 0.3s;
+        transform: translateY(600%);
+      }
+    }
+  }
+  &-info + &-info {
+    padding-left: 30px;
+  }
+  .products__items-info-cart{
+    display: none;
+  }
+  &-img-box {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  &-img{
+    width: 186px;
+    height: 195px;
+  }
+  &-link {
+    padding: 17px 15px 13px 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  &-link:hover {
+    background-color: $menu;
+    path {
+      fill: #fff;
+    }
+  }
+  &-link + &-link {
+    margin-left: 15px;
+  }
+  &-link-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+    transform: translateY(300%);
+  }
+  &-info-img {
+    position: relative;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  &-info:hover {
+    .products__items-link-box {
+      transform: translateY(0);
+    }
+  }
+  &-info-title {
+    font-size: 16px;
+    line-height: 40px;
+    @extend %dnsans-500;
+    color: #243f4d;
+    margin-top: auto;
+  }
+  &-info-price {
+    font-size: 16px;
+    line-height: 40px;
+    @extend %dnsans-700;
+    color: $menu;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+{% include 'app/module/_header/_header.html' %}
+
+<body>
+
+  
+  <main class="main">
+    {% include 'app/module/_top-slider/_top-slider.html' %}
+
+    {% include 'app/module/_fast-info/_fast-info.html' %}
+
+    {% include 'app/module/_products/_products.html' %}
+
+    {% include 'app/module/_mirum/_mirum.html' %}
+
+    {% include 'app/module/_design/_design.html' %}
+    {% include 'app/module/_video/_video.html' %}
+
+    {% include 'app/module/_articles/_articles.html' %}
+    
+    {% include 'app/module/_parents/_parents.html' %}
+    
+    
+    
+    
+    
+
+  </main>
+  
+    {% include 'app/module/_footer/_footer.html' %}
+
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

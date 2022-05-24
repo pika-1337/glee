@@ -1,0 +1,15 @@
+.top {
+  height: 125px;
+  background-color: #edf1f4;
+  &__title {
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    @extend %rubic-300;
+  }
+}

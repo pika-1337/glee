@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/register.min.css">
+</head>
+
+<body>
+  {% include 'app/module/_header/_header.html' %}
+
+  <main class="main">
+    
+    {% include 'app/module/_top/_top.html' %}
+
+
+    <section class="modal">
+      <div class="container container__inside">
+        <!-- <div class="modal__links">
+          <a class="modal__link" href=""></a>
+          <a class="modal__link" href=""></a>
+        </div> -->
+        <form class="modal__form" action="#">
+          <label class="modal__label" for="username">
+            Username or email address *
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label" for="password">
+            Password *
+            <input class="modal__input" type="password" required>
+          </label>
+            <button class="modal__btn" type="submit" >Login</button>
+          <div class="modal__info-wrapper">
+            <label>
+              <input type="checkbox"> Remember me </label>
+          </label>
+            <a class="modal__lost" href="#">Lost your password?</a>
+          </div>
+          <p class="modal__text">
+            Not registered? No problem
+          </p>
+          <a class="modal__link" href="#">
+            Create an account
+          </a>
+
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  {% include 'app/module/_footer/_footer.html' %}
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

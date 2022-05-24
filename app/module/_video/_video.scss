@@ -1,0 +1,24 @@
+.video {
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 501px;
+  background-image: url(/images/video-bg/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__one,
+  &__two,
+  &__three {
+    position: absolute;
+    cursor: pointer;
+  }
+  &__play {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

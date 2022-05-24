@@ -1,0 +1,49 @@
+.mirum {
+  margin-top: 125px;
+  margin-bottom: 100px;
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__item {
+    max-width: 870px;
+    display: flex;
+    padding-bottom: 80px;
+    // padding-left: 135px;
+    background-color: #feefe2;
+  }
+  &__item-img-wrapper {
+    margin-top: -90px;
+    padding-left: 100px;
+    padding-right: 60px;
+  }
+
+  &__item-text-wrapper {
+    padding-top: 100px;
+  }
+  &__item-title {
+    font-size: 26px;
+    line-height: 32px;
+    @extend %dnsans-700;
+    width: 250px;
+    padding-bottom: 20px;
+  }
+  &__item-text {
+    line-height: 30px;
+    width: 340px;
+    padding-bottom: 30px;
+  }
+  &__item-link {
+    border: 1px solid #b3b7b5;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px 0 25px;
+    background-color: #feefe2;
+    color: $menu;
+    font-size: 15px;
+    line-height: 12px;
+    max-width: 200px;
+  }
+}

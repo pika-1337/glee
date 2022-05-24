@@ -1,0 +1,11 @@
+.parents {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-color: #fef7f0;
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+.fast__info {
+  background-color: $bg;
+  padding: 47px 0 75px 0;
+  &-inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-item {
+    padding-left: 77px;
+    position: relative;
+  }
+  &-item-svg {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  &-title {
+    padding-bottom: 10px;
+    @extend %dnsans-700;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  &-text {
+    @extend %dnsans-400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
