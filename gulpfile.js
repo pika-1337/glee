@@ -15,7 +15,7 @@ const browserSync =     require('browser-sync').create();
         server: {
             baseDir: "app/"
         },
-        notofy:false
+        notify:false
     });
     }
 
@@ -27,7 +27,7 @@ const browserSync =     require('browser-sync').create();
     }
 
   function styles()  {
-    return src('app/**/*.scss')
+    return src('app/scss/*.scss')
     .pipe(scss({outputStyle:'compressed'}))
     // .pipe(concat())
     .pipe(rename({
@@ -87,7 +87,7 @@ const browserSync =     require('browser-sync').create();
   }
 
   function watching() {
-    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/**/*.scss'], styles);
     watch(['app/*.njk'], nunjucks);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);

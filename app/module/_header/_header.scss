@@ -88,3 +88,41 @@
     line-height: 16px;
   }
 }
+
+
+@media(max-width:1100px){
+  
+
+  
+    .menu {
+      display: none;
+      &__list {
+        display: none;
+      }
+    }
+  
+}
+  // .menu{
+  //   &__list{
+  //   display: none;
+  //   }
+  //   &__btn{
+  //     width: 30px;
+  //     height: 30px;
+  //     border: none;
+  //     background-color: transparent;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     position: relative;
+  //     &::after,
+  //     &::before{
+  //       content: "";
+  //       position: absolute;
+  //       width: 100%;
+  //       height: 3px;
+  //       color:#29282d;
+  //     }
+  //   }
+  // }
+
