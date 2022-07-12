@@ -3,6 +3,7 @@
   padding: 80px 0 70px 0;
   border-bottom: 1px solid #dae4e9;
   display: flex;
+  justify-content: space-between;
   &__logo {
     display: block;
     margin-bottom: 25px;
@@ -26,20 +27,18 @@
     display: block;
     margin-bottom: 10px;
   }
+
   &__item-info {
-    width: 200px;
-    margin-right: 100px;
+    max-width: 200px;
   }
   &__services {
-    max-width: 170px;
-    margin-right: 130px;
+    min-width: 150px;
   }
   &__account {
-    max-width: 100px;
-    margin-right: 200px;
+    min-width: 100px;
   }
   &__newsletter {
-    width: 270px;
+    max-width: 270px;
   }
   &__text {
     margin-bottom: 40px;
@@ -85,7 +84,37 @@
     padding-right: 15px;
   }
   &-menu__list-item + .footer-bottom-menu__list-item {
-    padding: 0 15px;
+    padding: 0 1 5px;
     border-left: 1px solid #7b7b7b;
   }
+}
+
+
+@media(max-width:1200px){
+  .footer-top{
+    &__item-info {
+    max-width: 200px;
+  }
+  &__services {
+    max-width: 150px;
+  }
+  &__account {
+    max-width: 100px;
+  }
+  &__newsletter {
+    min-width: 270px;
+  }
+  }
+}
+
+@media(max-width:850px){
+  .footer-top{
+    display: flex;
+    flex-wrap:wrap ;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+
+
 }

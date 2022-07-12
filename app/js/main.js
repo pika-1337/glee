@@ -3,12 +3,17 @@ $(function(){
 
 
 
+
+
+
+
+
   $('.product-tabs__top-item').on('click', function(e){
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
     $(this).addClass('product-tabs__top-item--active');
 
-    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active')
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   })
 
@@ -103,3 +108,18 @@ $(function(){
   var mixer = mixitup('.design__items' );
 
 })
+
+
+$(function(){
+  
+    $('.menu__btn').on('click',function(){
+      $('.menu__list').addClass('menu__list--active');
+      });
+  
+
+})
+
+
+// $('.menu__btn').on('click',function(){
+//     $('.menu__list').toggleClass ('menu__list--active')
+//   
