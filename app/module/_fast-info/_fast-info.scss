@@ -3,7 +3,7 @@
   padding: 47px 0 75px 0;
   &-inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   &-item {
     padding-left: 77px;
@@ -27,3 +27,34 @@
     line-height: 30px;
   }
 }
+
+
+@media(max-width:1000px){
+  .fast__info{
+  &-inner{
+    display: block;
+    width: 100%;
+    }
+    &-item{
+      margin-bottom: 15px;  
+    }
+  
+  &-title{
+    line-height: 20px;
+  }
+  }
+}
+
+
+// @media(max-width:600px){
+//   .fast__info{
+
+  
+//   &-title{
+//     font-size: 15px;
+//   }
+//   &-text{
+//     font-size: 13px;
+//   }
+//   }
+// }

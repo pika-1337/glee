@@ -65,3 +65,52 @@
     margin-right: 30px;
   }
 }
+
+
+
+@media(max-width:1250px){
+.articles {
+  &__items {
+    display: block;
+
+  }
+  &__item {
+    margin: 0 auto;
+    
+  }
+}
+.articles__item+.articles__item {
+    margin-left: auto;
+}
+}
+
+@media(max-width:560px){
+
+.articles__header-title {
+    font-size: 23px;
+}
+
+
+}
+
+
+@media(max-width:360px){
+
+.articles__header-title {
+    font-size: 18px;
+}
+.articles__item-title{
+  font-size: 17px;
+}
+.articles__item-info{
+  font-size: 11px;
+}
+.articles__item-info a{
+  font-size: 11px;
+}
+}
+
+
+
+
+

@@ -9,3 +9,22 @@
     align-items: center;
   }
 }
+
+
+@media(max-width:850px){
+  .parents {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #fef7f0;
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__icon{
+    margin-bottom: 30px;
+  }
+}
+}
