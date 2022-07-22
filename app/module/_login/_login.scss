@@ -60,3 +60,14 @@
   //   color: white;
   // }
 }
+
+
+
+@media(max-width:380px){
+  .modal__info-wrapper{
+    display: grid;
+  }
+  .modal__lost{
+    margin-top: 15px;
+  }
+}

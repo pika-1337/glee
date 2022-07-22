@@ -11,7 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@700&family=Rubik:wght@400;500&display=swap"
     rel="stylesheet">
   <title>Document</title>
-  <link rel="stylesheet" href="css/register.min.css">
+  <link rel="stylesheet" href="css/login.min.css">
 </head>
 
 <body>
@@ -19,7 +19,19 @@
 
   <main class="main">
     
-    {% include 'app/module/_top/_top.html' %}
+    <section class="top">
+  <h2 class="top__title"> Register </h2>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#"> Home </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <span class="breadcrumbs__link" href="#"> Register </span>
+      </li>
+    </ul>
+  </div>
+</section>
 
 
     <section class="modal">
@@ -45,10 +57,10 @@
             <a class="modal__lost" href="#">Lost your password?</a>
           </div>
           <p class="modal__text">
-            Not registered? No problem
+            Have an account? No problem
           </p>
           <a class="modal__link" href="#">
-            Create an account
+            Log in
           </a>
 
         </form>

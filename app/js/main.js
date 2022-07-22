@@ -1,7 +1,20 @@
 $(function(){
 
+  $('.shop__filter-btn').on('click',function(){
+    $('.shop__filters').slideToggle();
+  })
 
 
+
+  $('.button-list').on('click', function(){
+    $('.product-item').addClass('product-item--list');
+    $('.shop-content__inner').addClass('shop-content__nogrid');
+  })
+
+  $('.button-grid').on('click', function(){
+    $('.product-item').removeClass('product-item--list');
+    $('.shop-content__inner').removeClass('shop-content__nogrid');
+  })
 
 
 
@@ -24,6 +37,14 @@ $(function(){
     slidesToScroll: 1,
     vertical:true,
     draggable:false,
+    responsive:[
+      {
+      breakpoing:850,
+      settings:{
+        draggable:true,
+      }
+      }
+    ]
 
 
   })
